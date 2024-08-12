@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex System</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .items{
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+            border-radius:20px;
+        }
+        .container-2{
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+            justify-content: center;
+        }
+        .box{
+            background-color: blueviolet;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flex System Simple website</h2>
+    <div class="container">
+        <div class="box">
+            <h3>FIrst Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae id hic blanditiis, eligendi ipsa expedita
+                corporis maxime culpa voluptates ea?</p>
+        </div>
+        <div class="box">
+            <h3>Second Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae id hic blanditiis, eligendi ipsa expedita
+                corporis maxime culpa voluptates ea?</p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+
+</html>
